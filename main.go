@@ -5,7 +5,7 @@ import (
 	"os"
 	"strconv"
 )
-asdasdas
+
 func checknum() {
 	var num int64
 	for {
