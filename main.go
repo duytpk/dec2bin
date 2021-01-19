@@ -11,11 +11,15 @@ func checknum() {
 	for {
 		fmt.Print("Enter Decimal Number:")
 		fmt.Scanln(&num)
-		output := strconv.FormatInt(num, 2)
-		fmt.Print("Output: ", output)
-		os.Exit(0)
-	}
+		if num >= 0 {
+			output := strconv.FormatInt(num, 2)
+			fmt.Print("Output: ", output)
+			os.Exit(0)
+		} else {
+			fmt.Println("invalid input")
+		}
 
+	}
 }
 
 func main() {
